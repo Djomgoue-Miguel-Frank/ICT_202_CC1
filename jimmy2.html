@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio Jimmy</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="jimmy2.css">
+</head>
+<body>
+    <div class="navigation">
+        <a href="CC1.html" class="btn-retour">
+            <i class="fa-solid fa-arrow-left"></i> Retour à l'accueil
+        </a>
+    </div>
+
+    <div class="langues">
+        <button onclick="traduireFR()">Français</button>
+        <button onclick="traduireEN()">English</button>
+    </div>
+
+    <div class="cv">
+        <aside class="gauche">
+            <div class="photo">
+                <img src="jimmy2.jpg" alt="Jimmy">
+            </div>
+
+            <section class="bloc">
+                <h3 id="profilTitre">PROFIL</h3>
+                <div class="trait"></div>
+                <p id="profilTexte">
+                    Étudiant passionné par la sécurité informatique, le développement logiciel et le design graphique (UI/UX). Je développe des applications et des systèmes de gestion innovants.
+                </p>
+            </section>
+
+            <section class="bloc">
+                <h3 id="contactTitre">CONTACT</h3>
+                <div class="trait"></div>
+                <p><i class="fa-solid fa-location-dot"></i> <span id="ville">Yaoundé - Cameroun</span></p>
+                <p><i class="fa-solid fa-envelope"></i> jimmycorneillengom@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> +237 659 94 98 83</p>
+            </section>
+
+            <section class="bloc">
+                <h3 id="loisirTitre">LOISIRS</h3>
+                <div class="trait"></div>
+                <p id="loisirTexte">Design graphique, Veille technologique, Musique.</p>
+            </section>
+
+            <section class="bloc">
+                <h3 id="langueTitre">LANGUES</h3>
+                <div class="trait"></div>
+                <p>Français</p>
+                <p>Anglais</p>
+            </section>
+        </aside>
+
+        <main class="droite">
+            <h1>JIMMY CORNEILLE NGOM</h1>
+            <h2 class="poste" id="poste">ÉTUDIANT EN SÉCURITÉ INFORMATIQUE</h2>
+
+            <section class="section">
+                <h3 id="formationTitre">FORMATION</h3>
+                <div class="trait"></div>
+                <ul id="formationListe">
+                    <li id="f1">2025 - Présent : Licence 2 Sécurité Informatique (ICT4D) - Université de Yaoundé I</li>
+                    <li id="f2">2024 - 2025 : Licence 1 ICT4D - Université de Yaoundé I</li>
+                    <li id="f3">2024 : Baccalauréat</li>
+                    <li id="f4">2022 : Probatoire</li>
+                </ul>
+            </section>
+
+            <section class="section">
+                <h3 id="experienceTitre">PROJETS & RÉALISATIONS</h3>
+                <div class="trait"></div>
+                <ul id="experienceListe">
+                    <li id="p1"><strong>MENTION237 :</strong> Plateforme éducative pour la réussite aux examens.</li>
+                    <li id="p2"><strong>EVALTRACK :</strong> Application de gestion des notes des étudiants.</li>
+                    <li id="p3"><strong>Gestion de restaurant :</strong> Système complet de gestion.</li>
+                    <li id="p4"><strong>Emploi du temps :</strong> Application de gestion scolaire.</li>
+                </ul>
+            </section>
+
+            <section class="section">
+                <h3 id="competenceTitre">COMPÉTENCES</h3>
+                <div class="trait"></div>
+                <ul>
+                    <li id="c1"><strong>Dév :</strong> Langage C, Algorithmique, Linux (Ubuntu)</li>
+                    <li id="c2"><strong>Sécurité :</strong> Analyse système, Machines virtuelles</li>
+                    <li id="c3"><strong>Design :</strong> Photoshop, Figma, Canva, UI/UX Design</li>
+                </ul>
+            </section>
+
+            <section class="section">
+                <h3 id="videoTitre">VIDÉO DE PRÉSENTATION</h3>
+                <div class="trait"></div>
+                <video controls>
+                    <source src="jimmy2.mp4" type="video/mp4">
+                </video>
+            </section>
+
+            <section class="section">
+                <h3 id="audioTitre">AUDIO DE PRÉSENTATION</h3>
+                <div class="trait"></div>
+                <audio controls>
+                    <source src="jimmy2_audio.mp4" type="audio/mp4">
+                    Votre navigateur ne supporte pas l'élément audio.
+                </audio>
+            </section>
+        </main>
+    </div>
+    <script src="jimmy2.js"></script>
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Faouz</title>
+    <link rel="stylesheet" href="faouz.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <div class="langues">
+        <button onclick="traduireFR()">Français</button>
+        <button onclick="traduireEN()">English</button>
+    </div>
+
+    <div class="cv">
+        <aside class="gauche">
+            <div class="photo">
+                <img src="faouz.jpg" alt="Photo de profil de Faouz" width="150" style="border-radius: 50%;">
+            </div>
+
+            <section class="bloc">
+                <h3 id="profilTitre">PROFIL</h3>
+                <div class="trait"></div>
+                <div id="profilTexte">Moi ,
+                    <h2>NJIMOLUH WAJID FAOUZ</h2>
+                    <p>Je suis étudiant passionné par la cyber-sécurité, le développement web, le développement mobile, les technologies et l'innovation.</p>
+                </div>
+            </section>
+
+            <section class="bloc">
+                <h3 id="contactTitre">CONTACT</h3>
+                <div class="trait"></div>
+                <p><i class="fa-solid fa-location-dot"></i> Yaoundé - Cameroun</p>
+                <p><i class="fa-solid fa-envelope"></i> wajidnjimoluh@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> +237 693172961</p>
+            </section>
+
+            <section class="bloc">
+                <h3 id="loisirTitre">LOISIRS</h3>
+                <div class="trait"></div>
+                <p id="loisirTexte"> football , Nouvelles technologies .</p>
+            </section>
+
+            <section class="bloc">
+                <h3 id="parcoursTitre">PARCOURS</h3>
+                <div class="trait"></div>
+                <p><strong>2025 :</strong> Licence 1 ICT4D</p>
+                <p><strong>2024 :</strong> BACCALAUREAT (LYCLAF)</p>
+                <p><strong>2021 :</strong> BEPC (LYCLAF)</p>
+            </section>
+
+            <section class="bloc">
+                <h3 id="langueTitre">LANGUES</h3>
+                <div class="trait"></div>
+                <p>Français</p>
+                <p>Anglais</p>
+            </section>
+        </aside>
+
+        <main class="droite">
+            <h1>FAOUZ nji</h1>
+            <h3 id="poste">ÉTUDIANT EN INFORMATIQUE ICT4D <br> 24H2076</h3>
+
+            <section class="card">
+                <h2 id="competenceTitre">COMPÉTENCES</h2>
+                <div class="trait"></div>
+                <div class="skills">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                    <span>Utilisation des outils IA</span>
+                </div>
+            </section>
+
+
+
+            <section class="card">
+                <h2 id="videoTitre">PRÉSENTATION VIDÉO</h2>
+                <div class="trait"></div>
+                <video controls width="100%" style="margin-top: 10px; border-radius: 8px;">
+                    <source src="faouz_video.mp4" type="video/mp4">
+                    Votre navigateur ne supporte pas la lecture de vidéos.
+                </video>
+            </section>
+
+            <section class="card">
+                <h2 id="audioTitre">PRÉSENTATION AUDIO</h2>
+                <div class="trait"></div>
+                <audio controls style="margin-top: 10px; width: 100%;">
+                    <source src="faouz_audio.mp3" type="audio/mpeg">
+                    Votre navigateur ne supporte pas la lecture d'audios.
+                </audio>
+            </section>
+        </main>
+    </div>
+    
+    <script src="faouz.js"></script>
+</body>
+</html>

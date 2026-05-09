@@ -1,0 +1,161 @@
+/* Réinitialisation de base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f7f6;
+    color: #333;
+    padding: 20px;
+}
+
+/* Boutons de traduction */
+.langues {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.langues button {
+    background-color: #2c3e50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.langues button:hover {
+    background-color: #1a252f;
+}
+
+/* Conteneur principal du CV */
+.cv {
+    display: flex;
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #fff;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* --- Colonne Gauche --- */
+.gauche {
+    width: 35%;
+    background-color: #2c3e50;
+    color: #fff;
+    padding: 30px 20px;
+}
+
+.photo {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.photo img {
+    border: 3px solid #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+.bloc {
+    margin-bottom: 30px;
+}
+
+.bloc h3 {
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+}
+
+.bloc p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+.bloc p i {
+    width: 25px;
+    color: #3498db;
+}
+
+.trait {
+    height: 3px;
+    width: 40px;
+    background-color: #3498db;
+    margin-bottom: 15px;
+}
+
+/* --- Colonne Droite --- */
+.droite {
+    width: 65%;
+    padding: 40px;
+}
+
+.droite h1 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+
+.droite h3#poste {
+    font-size: 1.2rem;
+    color: #3498db;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+.card {
+    margin-bottom: 30px;
+}
+
+.card h2 {
+    font-size: 1.5rem;
+    color: #2c3e50;
+    margin-bottom: 5px;
+}
+
+.card .trait {
+    background-color: #3498db;
+    width: 60px;
+}
+
+/* Compétences (Badges) */
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.skills span {
+    background-color: #e0e6ed;
+    color: #2c3e50;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+/* Médias */
+video, audio {
+    width: 100%;
+    outline: none;
+}
+
+/* Responsive (Tablettes et Mobiles) */
+@media screen and (max-width: 768px) {
+    .cv {
+        flex-direction: column;
+    }
+    
+    .gauche, .droite {
+        width: 100%;
+    }
+}

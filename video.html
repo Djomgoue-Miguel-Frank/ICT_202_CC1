@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Vidéo</title>
+
+    <style>
+
+        body{
+            text-align:center;
+            background:#f4f4f4;
+            font-family:Arial;
+        }
+
+        video{
+            width:80%;
+            margin-top:30px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<h1>🎥 Présentation Vidéo</h1>
+
+<video id="video" controls autoplay>
+
+    <source src="mibelle.mp4" type="video/mp4">
+
+</video>
+
+<script>
+
+const params = new URLSearchParams(window.location.search);
+
+const time = params.get("time");
+
+const video = document.getElementById("video");
+
+video.addEventListener("loadedmetadata", function(){
+
+    if(time){
+
+        video.currentTime = parseInt(time);
+
+    }
+
+    video.play();
+
+});
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>CV - Yogo Victorine</title>
+
+<style>
+
+:root{
+  --bg1:#0f172a;
+  --bg2:#1e293b;
+  --accent:#38bdf8;
+  --text:#e2e8f0;
+  --card:rgba(255,255,255,0.08);
+}
+
+*{
+  box-sizing:border-box;
+}
+
+body{
+  margin:0;
+  font-family:Arial, sans-serif;
+  background:linear-gradient(135deg,var(--bg1),var(--bg2));
+  color:var(--text);
+}
+
+.container{
+  max-width:1000px;
+  margin:auto;
+  padding:40px;
+}
+
+.header{
+  text-align:center;
+  padding:30px;
+}
+
+.profile{
+  width:140px;
+  height:140px;
+  border-radius:50%;
+  border:4px solid var(--accent);
+  object-fit:cover;
+  box-shadow:0 0 20px rgba(56,189,248,0.5);
+}
+
+.lang-buttons{
+  margin:20px 0;
+}
+
+.btn{
+  padding:10px 20px;
+  border:none;
+  border-radius:10px;
+  cursor:pointer;
+  margin:5px;
+  background:var(--accent);
+  color:#000;
+  font-weight:bold;
+}
+
+.grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:20px;
+}
+
+.card{
+  background:var(--card);
+  padding:20px;
+  border-radius:15px;
+  backdrop-filter:blur(10px);
+}
+
+.full{
+  grid-column:1/-1;
+}
+
+h2{
+  border-left:4px solid var(--accent);
+  padding-left:10px;
+}
+
+video,
+audio{
+  width:100%;
+  border-radius:10px;
+}
+
+@media(max-width:768px){
+
+  .grid{
+    grid-template-columns:1fr;
+  }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="header">
+
+<img class="profile" src="vicky.jpg" alt="Photo">
+
+<div class="lang-buttons">
+
+<button class="btn" onclick="setLanguage('fr')">
+Français
+</button>
+
+<button class="btn" onclick="setLanguage('en')">
+English
+</button>
+
+</div>
+
+<h1>Yogo Victorine</h1>
+
+<div class="subtitle fr">
+Étudiante | Hôtesse | Mannequin | Agent d'assurance
+</div>
+
+<div class="subtitle en" style="display:none;">
+Student | Hostess | Model | Insurance Agent
+</div>
+
+<p>Email : yogovictorine575@gmail.com</p>
+
+</div>
+
+<div class="grid">
+
+<!-- PROFIL -->
+
+<div class="card">
+
+<h2 class="fr">Profil</h2>
+<h2 class="en" style="display:none;">Profile</h2>
+
+<p class="fr">
+
+Étudiante de 19 ans à l’Université de Yaoundé 1.
+Formation en sécurité informatique,
+réseau informatique,
+marketing digital et communication.
+
+</p>
+
+<p class="en" style="display:none;">
+
+19-year-old student at the University of Yaoundé 1.
+Training in cybersecurity,
+computer networking,
+digital marketing and communication.
+
+</p>
+
+</div>
+
+<!-- ETAT CIVIL -->
+
+<div class="card">
+
+<h2 class="fr">État civil</h2>
+<h2 class="en" style="display:none;">Civil Status</h2>
+
+<p class="fr">
+
+Nom : Yogo Victorine <br>
+Âge : 19 ans <br>
+Nationalité : Camerounaise <br>
+Situation : Célibataire
+
+</p>
+
+<p class="en" style="display:none;">
+
+Name : Yogo Victorine <br>
+Age : 19 years old <br>
+Nationality : Cameroonian <br>
+Status : Single
+
+</p>
+
+</div>
+
+<!-- FORMATION -->
+
+<div class="card">
+
+<h2 class="fr">Formation</h2>
+<h2 class="en" style="display:none;">Education</h2>
+
+<div class="fr">
+
+<p>Baccalauréat scientifique</p>
+<p>Université de Yaoundé 1</p>
+<p>Réseaux informatiques</p>
+
+</div>
+
+<div class="en" style="display:none;">
+
+<p>Scientific Baccalaureate</p>
+<p>University of Yaoundé 1</p>
+<p>Computer Networking</p>
+
+</div>
+
+</div>
+
+<!-- COMPETENCES -->
+
+<div class="card">
+
+<h2 class="fr">Compétences</h2>
+<h2 class="en" style="display:none;">Skills</h2>
+
+<ul class="fr">
+
+<li>Marketing</li>
+<li>Communication</li>
+<li>Réseaux informatiques</li>
+<li>Français / English</li>
+
+</ul>
+
+<ul class="en" style="display:none;">
+
+<li>Marketing</li>
+<li>Communication</li>
+<li>Computer Networking</li>
+<li>French / English</li>
+
+</ul>
+
+</div>
+
+<!-- VIDEO -->
+
+<div class="card full">
+
+<h2 class="fr">Vidéo de présentation</h2>
+<h2 class="en" style="display:none;">Presentation Video</h2>
+
+<video controls>
+
+<source src="vicky.mp4" type="video/mp4">
+
+</video>
+
+</div>
+
+<!-- AUDIO -->
+
+<div class="card full">
+
+<h2 class="fr">Présentation Audio</h2>
+<h2 class="en" style="display:none;">Audio Presentation</h2>
+
+<audio controls>
+
+<source src="vicky.mp3" type="audio/mpeg">
+
+</audio>
+
+</div>
+
+</div>
+
+</div>
+
+<script>
+
+function setLanguage(lang){
+
+  const fr = document.querySelectorAll('.fr');
+  const en = document.querySelectorAll('.en');
+
+  if(lang === 'fr'){
+
+    fr.forEach(el => el.style.display = '');
+    en.forEach(el => el.style.display = 'none');
+
+  }else{
+
+    fr.forEach(el => el.style.display = 'none');
+    en.forEach(el => el.style.display = '');
+
+  }
+
+}
+
+</script>
+
+</body>
+</html>

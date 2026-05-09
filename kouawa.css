@@ -1,0 +1,297 @@
+/* ========== RÉINITIALISATION GLOBALE ========== */
+/* Réinitialise les marges, padding et sélectionne la police pour tous les éléments */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* ========== STYLE DU BODY ========== */
+/* Centre le contenu verticalement et horizontalement, avec un fond bleu clair */
+body {
+  background: lightblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+/* ========== CONTENEUR PRINCIPAL ========== */
+/* Grille 2 colonnes : 1 colonne pour la gauche (33%), 2 pour la droite (66%) */
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+  min-height: 1000px;
+  margin: 50px;
+  background: #fff;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  box-shadow: 0 35px 55px rgba(0, 0, 0, 0);
+}
+/* ========== COLONNE GAUCHE (Profil & Infos) ========== */
+/* Fond foncé (#003147) contenant la photo de profil et les informations personnelles */
+.container .left_side {
+  position: relative;
+
+  background: #003147;
+  padding: 45px;
+}
+
+/* ========== SECTION PROFIL ========== */
+/* Affiche le profil en colonne, centré, avec une bordure en bas */
+.profileText {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(250, 249, 249, 0.961);
+}
+
+/* Cadre circulaire pour la photo de profil (200x200px) */
+.profileText .imgbx {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+/* Positionne l'image pour remplir complètement le cadre circulaire */
+.profileText .imgbx img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* Style des images générales - circulaires */
+img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+/* Titre du profil - blanc, majuscules, centré */
+.profileText h2 {
+  color: #fff;
+  font-size: 1.5rem;
+  margin-top: 50px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 600;
+  line-height: 1.4em;
+}
+/* Sous-titre du profil (plus petit et moins gras) */
+.profileText h2 span {
+  font-size: 0.8em;
+  font-weight: 300;
+  text-align: center;
+}
+
+/* ========== INFORMATIONS DE CONTACT ========== */
+.contactInfo {
+  padding-top: 40px;
+}
+
+/* Titre des sections (Contact, Éducation, Langue) */
+.title {
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+
+/* Liste des contacts */
+.contactInfo ul {
+  position: relative;
+}
+/* Élément de contact - sans puce de liste */
+.contactInfo ul li {
+  position: relative;
+  list-style: none;
+  margin: 10px 0;
+  cursor: pointer;
+}
+/* Liens sans soulignement, en blanc */
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* Icône de contact - bleu ciel (#03a9f4) */
+.contactInfo ul li .icon {
+  display: inline-block;
+  width: 30px;
+  font-size: 18px;
+  color: #03a9f4;
+}
+
+/* Texte du contact - blanc */
+.contactInfo ul li span {
+  color: #fff;
+  font-size: 300;
+}
+/* ========== SECTION ÉDUCATION ========== */
+.contactInfo.education {
+  margin-bottom: 15px;
+}
+
+/* Titre de l'éducation - bleu ciel */
+.contactInfo.education h5 {
+  color: #03a9f4;
+  font-size: 500;
+}
+
+/* Sous-titre éducation (deuxième h4) - blanc */
+.contactInfo.education h4:nth-child(2) {
+  color: #fff;
+  font-size: 500;
+}
+
+/* Texte éducation - blanc */
+.contactInfo.education h4 {
+  color: #fff;
+  font-size: 300;
+}
+
+/* ========== SECTION LANGUES ========== */
+/* Barre de progression des langues - fond sombre */
+.contactInfo.Language .percent {
+  position: relative;
+  width: 100%;
+  height: 6px;
+  background: #081921;
+  display: block;
+  margin-top: 5px;
+}
+/* Remplissage de la barre de progression - bleu ciel */
+.contactInfo.Language .percent div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: #03a9f4;
+}
+/* ========== COLONNE DROITE (Contenu principal) ========== */
+/* Fond blanc contenant l'expérience, compétences et intérêts */
+.container .right_side {
+  position: relative;
+  background: #fff;
+  padding: 40px;
+}
+/* ========== SECTION À PROPOS/EXPÉRIENCE ========== */
+.about {
+  margin-bottom: 50px;
+}
+/* Dernière section - pas de marge inférieure */
+.about:last-child {
+  margin-bottom: 0;
+}
+/* Titre de section - couleur foncée */
+.title2 {
+  color: #003147;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+/* Paragraphes - texte gris foncé */
+p {
+  color: #333;
+}
+/* Boîte d'expérience - affiche année et détails côte à côte */
+.about .box {
+  display: flex;
+  flex-direction: row;
+  margin: 20px 0;
+}
+
+/* Colonne année/date */
+.about .box .year {
+  min-width: 150px;
+}
+
+/* Année - gris, majuscules */
+.about .box .year h5 {
+  text-transform: uppercase;
+  color: #848c90;
+  font-weight: 600;
+}
+
+/* Titre de l'expérience - bleu */
+.about .box.text h4 {
+  text-transform: uppercase;
+  color: #2a7da2;
+  font-size: 16px;
+}
+
+/* ========== SECTION COMPÉTENCES ========== */
+/* Boîte de compétence - grille pour le nom et la barre de progression */
+.skills .box {
+  position: relative;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Nom de la compétence - gris */
+.skills .box h4 {
+  text-transform: uppercase;
+  color: #848c99;
+  font-weight: 500;
+}
+
+/* Barre de progression des compétences - gris clair */
+.skills .box .percent {
+  position: relative;
+  width: 100%;
+  height: 10px;
+  background: #f0f0f0;
+}
+
+/* Remplissage de la barre de compétence - bleu ciel */
+.skills .box .percent div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: #03a9f4;
+}
+/* ========== SECTION INTÉRÊTS ========== */
+/* Grille à 2 colonnes pour les intérêts */
+.interest ul {
+  display: grid;
+  grid-template-columns: repeat(2, 3fr);
+}
+/* Élément d'intérêt - sans puce */
+.interest ul li {
+  list-style: none;
+  color: #333;
+  font-weight: 500;
+  margin: 10px 0;
+}
+/* Icône d'intérêt - bleu ciel */
+.interest ul li .fa {
+  color: #03a9f4;
+  font-size: 18px;
+  width: 20px;
+}
+
+/* ========== RESPONSIVE - Tablettes et mobiles ========== */
+/* Sur écrans <= 1024px, le layout passe de grille à bloc (une colonne) */
+@media all and (max-width: 1024px) {
+  .container {
+    display: block;
+    background-color: red;
+  }
+  /* Colonne gauche en responsive - fond mauve */
+  .container .left_side {
+    position: relative;
+
+    background: #65019a;
+    padding: 45px;
+  }
+}

@@ -5,9 +5,10 @@
 
     <meta charset="UTF-8">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport"
+    content="width=device-width, initial-scale=1.0">
 
-    <title>CV Elsonk</title>
+    <title>CV Universitaire - Jimmy Trésor</title>
 
     <link rel="stylesheet" href="elsonk.css">
 
@@ -18,7 +19,7 @@
 
 <body>
 
-    <div class="topbar">
+    <div class="langues">
 
         <button onclick="traduireFR()">
             Français
@@ -30,9 +31,15 @@
 
     </div>
 
+
+
+
+
     <div class="cv">
 
-        <div class="gauche">
+
+
+        <aside class="gauche">
 
             <div class="photo">
 
@@ -40,61 +47,13 @@
 
             </div>
 
-            <h2 id="profilTitre">
-                PROFIL
-            </h2>
-
-            <div class="ligne"></div>
-
-            <p id="profilTexte">
-
-                Étudiant à l’université de Yaoundé I.
-                Passionné par le développement web
-                et les nouvelles technologies.
-                Spécialisé Full Stack Developer.
-
-            </p>
-
-            <h2 id="loisirTitre">
-                LOISIRS
-            </h2>
-
-            <div class="ligne"></div>
-
-            <p id="loisirTexte">
-
-                Games, programmation,
-                technologies et innovation.
-
-            </p>
-
-            <h2>
-                CONTACT
-            </h2>
-
-            <div class="ligne"></div>
-
-            <p>
-                <i class="fa-solid fa-envelope"></i>
-                jimmydouanla@gmail.com
-            </p>
-
-            <p>
-                <i class="fa-solid fa-location-dot"></i>
-                Yaoundé - Cameroun
-            </p>
-
-        </div>
-
-        <div class="droite">
-
             <h1>
                 DOUANLA MAFO <br>
                 JIMMY TRÉSOR
             </h1>
 
             <h3 id="poste">
-                FULL STACK DEVELOPER
+                Étudiant Full Stack Developer
             </h3>
 
             <div class="matricule">
@@ -102,6 +61,142 @@
                 Matricule : 24H2206
 
             </div>
+
+
+
+
+
+            <section>
+
+                <h2 id="contactTitre">
+                    CONTACT
+                </h2>
+
+                <div class="ligne"></div>
+
+                <p>
+                    <i class="fa-solid fa-envelope"></i>
+                    jimmydouanla@gmail.com
+                </p>
+
+                <p>
+                    <i class="fa-solid fa-phone"></i>
+                    +237 6 99 99 99 99
+                </p>
+
+                <p>
+                    <i class="fa-solid fa-location-dot"></i>
+                    Yaoundé - Cameroun
+                </p>
+
+            </section>
+
+
+
+
+
+            <section>
+
+                <h2 id="langueTitre">
+                    LANGUES
+                </h2>
+
+                <div class="ligne"></div>
+
+                <p>Français</p>
+
+                <p>English</p>
+
+            </section>
+
+
+
+
+
+            <section>
+
+                <h2 id="loisirTitre">
+                    LOISIRS
+                </h2>
+
+                <div class="ligne"></div>
+
+                <p id="loisirTexte">
+
+                    Programmation,
+                    technologies,
+                    football,
+                    innovation digitale.
+
+                </p>
+
+            </section>
+
+        </aside>
+
+
+
+
+
+        <main class="droite">
+
+            <section class="card">
+
+                <h2 id="profilTitre">
+                    PROFIL
+                </h2>
+
+                <div class="ligne"></div>
+
+                <p id="profilTexte">
+
+                    Étudiant à l’Université de Yaoundé I,
+                    passionné par le développement web,
+                    les systèmes informatiques et
+                    les nouvelles technologies.
+                    Motivé, créatif et capable de travailler
+                    en équipe sur des projets numériques.
+
+                </p>
+
+            </section>
+
+
+
+
+
+            <section class="card">
+
+                <h2 id="formationTitre">
+                    FORMATION
+                </h2>
+
+                <div class="ligne"></div>
+
+                <ul>
+
+                    <li>
+                        2023 - 2024 :
+                        Baccalauréat scientifique
+                    </li>
+
+                    <li>
+                        2024 - 2025 :
+                        Licence ICT4D Niveau 1
+                    </li>
+
+                    <li>
+                        2025 - 2026 :
+                        Licence ICT4D Niveau 2
+                    </li>
+
+                </ul>
+
+            </section>
+
+
+
+
 
             <section class="card">
 
@@ -114,20 +209,49 @@
                 <div class="skills">
 
                     <span>HTML</span>
-
                     <span>CSS</span>
-
                     <span>JavaScript</span>
-
                     <span>PHP</span>
-
                     <span>MySQL</span>
-
                     <span>React</span>
 
                 </div>
 
             </section>
+
+
+
+
+
+            <section class="card">
+
+                <h2 id="experienceTitre">
+                    EXPÉRIENCES
+                </h2>
+
+                <div class="ligne"></div>
+
+                <ul>
+
+                    <li>
+                        Développement de mini projets web
+                    </li>
+
+                    <li>
+                        Création de portfolios modernes
+                    </li>
+
+                    <li>
+                        Participation à des travaux universitaires
+                    </li>
+
+                </ul>
+
+            </section>
+
+
+
+
 
             <section class="card">
 
@@ -145,6 +269,10 @@
 
             </section>
 
+
+
+
+
             <section class="card">
 
                 <h2 id="audioTitre">
@@ -161,9 +289,13 @@
 
             </section>
 
-        </div>
+        </main>
 
     </div>
+
+
+
+
 
     <script src="elsonk.js"></script>
 

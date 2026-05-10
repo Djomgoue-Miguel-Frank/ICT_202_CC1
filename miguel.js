@@ -1,97 +1,65 @@
-const sections =
-document.querySelectorAll(".section");
-
-
-
-window.addEventListener("scroll", () => {
-
-    sections.forEach(section => {
-
-        const position =
-        section.getBoundingClientRect().top;
-
-        if (position < window.innerHeight - 100) {
-
-            section.classList.add("visible");
-
-        }
-
-    });
-
-});
-
-
-
-
-
 function traduireFR() {
 
     document.getElementById("profilTitre").innerHTML =
-    "PROFIL";
+        "PROFIL";
 
     document.getElementById("contactTitre").innerHTML =
-    "CONTACT";
+        "CONTACT";
 
     document.getElementById("loisirTitre").innerHTML =
-    "LOISIRS";
+        "LOISIRS";
 
     document.getElementById("langueTitre").innerHTML =
-    "LANGUES";
+        "LANGUES";
 
     document.getElementById("poste").innerHTML =
-    "ÉTUDIANT";
+        "ÉTUDIANT";
 
     document.getElementById("formationTitre").innerHTML =
-    "FORMATION";
+        "FORMATION";
 
     document.getElementById("experienceTitre").innerHTML =
-    "EXPÉRIENCES";
+        "EXPÉRIENCES";
 
     document.getElementById("competenceTitre").innerHTML =
-    "COMPÉTENCES";
+        "COMPÉTENCES";
 
     document.getElementById("videoTitre").innerHTML =
-    "VIDÉO DE PRÉSENTATION";
+        "VIDÉO DE PRÉSENTATION";
 
     document.getElementById("audioTitre").innerHTML =
-    "AUDIO DE PRÉSENTATION";
-
+        "AUDIO DE PRÉSENTATION";
 }
-
-
-
-
 
 function traduireEN() {
 
     document.getElementById("profilTitre").innerHTML =
-    "PROFILE";
+        "PROFILE";
 
     document.getElementById("contactTitre").innerHTML =
-    "CONTACT";
+        "CONTACT";
 
     document.getElementById("loisirTitre").innerHTML =
-    "HOBBIES";
+        "HOBBIES";
 
     document.getElementById("langueTitre").innerHTML =
-    "LANGUAGES";
+        "LANGUAGES";
 
     document.getElementById("poste").innerHTML =
-    "STUDENT";
+        "STUDENT";
 
     document.getElementById("formationTitre").innerHTML =
-    "EDUCATION";
+        "EDUCATION";
 
     document.getElementById("experienceTitre").innerHTML =
-    "EXPERIENCES";
+        "EXPERIENCES";
 
     document.getElementById("competenceTitre").innerHTML =
-    "SKILLS";
+        "SKILLS";
 
     document.getElementById("videoTitre").innerHTML =
-    "PRESENTATION VIDEO";
+        "PRESENTATION VIDEO";
 
     document.getElementById("audioTitre").innerHTML =
-    "PRESENTATION AUDIO";
-
+        "PRESENTATION AUDIO";
 }

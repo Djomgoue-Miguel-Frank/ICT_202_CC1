@@ -1,188 +1,105 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
-
-    <meta charset="UTF-8">
-
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
-
-    <title>CV Collectif du Groupe 4</title>
-
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap"
-          rel="stylesheet">
-
-    <link rel="stylesheet" href="accueil.css">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CV Collectif du Groupe 4</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="main.css">
 </head>
-
 <body>
+  <div class="application">
+    <header>
+      <h1>CV COLLECTIF DU GROUPE 4</h1>
+      <p>Creation, modification et suppression des CV avec IndexedDB</p>
+      <div class="toolbar">
+        <button id="open-create-modal" type="button" class="btn-primary">Nouveau CV</button>
+      </div>
+    </header>
 
-    <div class="application">
+    <section id="cv-list" class="liste"></section>
+  </div>
 
-        <header>
+  <div id="cv-modal" class="modal hidden">
+    <div class="modal-overlay" data-close-modal="true"></div>
+    <div class="modal-panel">
+      <h2>Nouveau CV</h2>
+      <p class="modal-help">Les fichiers selectionnes seront stockes dans IndexedDB.</p>
+      <p id="modal-error" class="modal-error"></p>
 
-            <h1>
-                CV COLLECTIF DU GROUPE 4
-            </h1>
-
-            <p>
-                Cliquez sur un membre pour ouvrir son CV
-            </p>
-
-        </header>
-
-        <div class="liste">
-
-            <a href="miguel.html" class="membre">
-
-                <img src="miguel.jpg">
-
-                <div class="infos">
-
-                    <h2>
-                        DJOMGOUE MIGUEL FRANK
-                    </h2>
-
-                    <p>
-                        Chef du groupe (Numero 41)• 24H2449
-                    </p>
-
-                </div>
-
-            </a>
-
-            <a href="elsonk.html" class="membre">
-
-                <img src="jimmy1.jpg">
-
-                <div class="infos">
-
-                    <h2>
-                        DOUANLA MAFO JIMMY TRESOR
-                    </h2>
-
-                    <p>
-                        Sous-chef (Numero 42)• 24H2206
-                    </p>
-
-                </div>
-
-            </a>
-
-            <a href="faouz.html" class="membre">
-
-                <img src="faouz.jpg">
-
-                <div class="infos">
-
-                    <h2>
-                        NJIMOLUH WAJID FAOUZ
-                    </h2>
-
-                    <p>
-                        Membre (Numero 43)• 24H2076
-                    </p>
-
-                </div>
-
-            </a>
-
-            <a href="jimmy2.html" class="membre">
-
-                <img src="jimmy2.jpg">
-
-                <div class="infos">
-
-                    <h2>
-                        NGOM JOSEPH JIMMY CORNEILLE
-                    </h2>
-
-                    <p>
-                        Membre (Numero 44)• 24H2199
-                    </p>
-
-                </div>
-
-            </a>
-
-            <a href="yogo.html" class="membre">
-
-                <img src="vicky.jpg">
-
-                <div class="infos">
-
-                    <h2>
-                        YOGO VICTORINE
-                    </h2>
-
-                    <p>
-                        Membre (Numero 45)• 24H2103
-                    </p>
-
-                </div>
-
-            </a>
-
-            <a href="kouawa.html" class="membre">
-
-                <img src="benji.jpg">
-
-                <div class="infos">
-
-                    <h2>
-                        KOUAWA FOBA BENJAMEN
-                    </h2>
-
-                    <p>
-                        Membre (Numero 46)• 24G2425
-                    </p>
-
-                </div>
-
-            </a>
-
-            <a href="nibelle.html" class="membre">
-
-                <img src="fille.jpg">
-
-                <div class="infos">
-
-                    <h2>
-                        MIKAM MIBELLE
-                    </h2>
-
-                    <p>
-                        Membre (Numero 47)• 21T2814
-                    </p>
-
-                </div>
-
-            </a>
-
-            <a href="kengne.html" class="membre">
-
-                <img src="bejor.jpg">
-
-                <div class="infos">
-
-                    <h2>
-                        KENGNE BEKAM FIDELE JORDAN
-                    </h2>
-
-                    <p>
-                        Membre (Numero 48)• 24H2143
-                    </p>
-
-                </div>
-
-            </a>
-
+      <form id="cv-form">
+        <div class="form-grid">
+          <label>Nom complet
+            <input name="fullName" type="text" required>
+          </label>
+          <label>Titre / Poste
+            <input name="headline" type="text" required>
+          </label>
+          <label>Role dans le groupe
+            <input name="groupRole" type="text" placeholder="Membre / Chef / Sous-chef">
+          </label>
+          <label>Matricule
+            <input name="matricule" type="text">
+          </label>
+          <label>Ville
+            <input name="city" type="text" value="Yaounde">
+          </label>
+          <label>Pays
+            <input name="country" type="text" value="Cameroun">
+          </label>
+          <label>Email
+            <input name="email" type="email">
+          </label>
+          <label>Telephone
+            <input name="phone" type="text">
+          </label>
         </div>
 
+        <label>Profil
+          <textarea name="profile" rows="3"></textarea>
+        </label>
+
+        <label>Loisirs
+          <textarea name="hobbies" rows="2"></textarea>
+        </label>
+
+        <div class="form-grid">
+          <label>Langues (une par ligne ou separees par virgule)
+            <textarea name="languages" rows="3"></textarea>
+          </label>
+          <label>Formation (une ligne par element)
+            <textarea name="education" rows="3"></textarea>
+          </label>
+          <label>Experiences / Projets (une ligne par element)
+            <textarea name="experiences" rows="3"></textarea>
+          </label>
+          <label>Competences (une ligne par element)
+            <textarea name="skills" rows="3"></textarea>
+          </label>
+        </div>
+
+        <div class="form-grid">
+          <label>Photo
+            <input name="photo" type="file" accept="image/*">
+          </label>
+          <label>Video
+            <input name="video" type="file" accept="video/*">
+          </label>
+          <label>Audio
+            <input name="audio" type="file" accept="audio/*">
+          </label>
+        </div>
+
+        <div class="modal-actions">
+          <button id="close-modal" type="button" class="btn-secondary">Annuler</button>
+          <button id="submit-cv" type="submit" class="btn-primary">Enregistrer</button>
+        </div>
+      </form>
     </div>
+  </div>
 
+  <script type="module" src="dist/main.js"></script>
 </body>
-
 </html>

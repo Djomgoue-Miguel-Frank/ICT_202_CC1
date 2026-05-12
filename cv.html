@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CV - Detail</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="cv.css">
+</head>
+<body>
+  <div class="top-row">
+    <a href="CC1.html" class="btn-back">Retour a l'accueil</a>
+
+    <div class="langues">
+      <button id="lang-fr" type="button" class="active">Francais</button>
+      <button id="lang-en" type="button">English</button>
+    </div>
+  </div>
+
+  <div id="cv-error" class="error-message hidden"></div>
+
+  <div id="cv-page" class="cv">
+    <aside class="gauche">
+      <div class="photo">
+        <img id="photo-image" src="" alt="">
+      </div>
+
+      <section class="bloc">
+        <h3 data-i18n="profile">PROFIL</h3>
+        <div class="trait"></div>
+        <p id="profile-text"></p>
+      </section>
+
+      <section class="bloc">
+        <h3 data-i18n="contact">CONTACT</h3>
+        <div class="trait"></div>
+        <p><strong>Ville:</strong> <span id="city"></span></p>
+        <p><strong>Pays:</strong> <span id="country"></span></p>
+        <p><strong>Email:</strong> <span id="email"></span></p>
+        <p><strong>Tel:</strong> <span id="phone"></span></p>
+      </section>
+
+      <section class="bloc">
+        <h3 data-i18n="hobbies">LOISIRS</h3>
+        <div class="trait"></div>
+        <p id="hobbies-text"></p>
+      </section>
+
+      <section class="bloc">
+        <h3 data-i18n="languages">LANGUES</h3>
+        <div class="trait"></div>
+        <ul id="languages-list"></ul>
+      </section>
+    </aside>
+
+    <main class="droite">
+      <div class="header-main">
+        <h1 id="full-name"></h1>
+        <h2 id="headline" class="poste"></h2>
+        <p id="badge-meta" class="badge"></p>
+      </div>
+
+      <div class="action-row">
+        <button id="btn-edit" type="button" class="btn-main" data-i18n="edit">Modifier le CV</button>
+        <button id="btn-delete" type="button" class="btn-danger" data-i18n="delete">Supprimer le CV</button>
+      </div>
+
+      <section class="section">
+        <h3 data-i18n="education">FORMATION</h3>
+        <div class="trait"></div>
+        <ul id="education-list"></ul>
+      </section>
+
+      <section class="section">
+        <h3 data-i18n="experiences">PROJETS &amp; EXPERIENCES</h3>
+        <div class="trait"></div>
+        <ul id="experiences-list"></ul>
+      </section>
+
+      <section class="section">
+        <h3 data-i18n="skills">COMPETENCES</h3>
+        <div class="trait"></div>
+        <ul id="skills-list"></ul>
+      </section>
+
+      <section id="video-section" class="section">
+        <h3 data-i18n="video">VIDEO DE PRESENTATION</h3>
+        <div class="trait"></div>
+        <video id="video-player" controls></video>
+        <div class="video-jumps">
+          <button type="button" class="jump-btn" data-video-jump="0">Presentation</button>
+          <button type="button" class="jump-btn" data-video-jump="30">Formation</button>
+          <button type="button" class="jump-btn" data-video-jump="60">Fin</button>
+        </div>
+      </section>
+
+      <section id="audio-section" class="section">
+        <h3 data-i18n="audio">AUDIO DE PRESENTATION</h3>
+        <div class="trait"></div>
+        <audio id="audio-player" controls></audio>
+      </section>
+    </main>
+  </div>
+
+  <div id="edit-modal" class="modal hidden">
+    <div class="modal-overlay" data-close-modal="true"></div>
+    <div class="modal-panel">
+      <h2 data-i18n="modalTitle">Modifier ce CV</h2>
+      <p class="modal-help">Les nouveaux fichiers remplaceront les medias existants dans IndexedDB.</p>
+      <p id="edit-error" class="modal-error"></p>
+
+      <form id="edit-form">
+        <div class="form-grid">
+          <label>Nom complet
+            <input name="fullName" type="text" required>
+          </label>
+          <label>Titre / Poste
+            <input name="headline" type="text" required>
+          </label>
+          <label>Role dans le groupe
+            <input name="groupRole" type="text">
+          </label>
+          <label>Matricule
+            <input name="matricule" type="text">
+          </label>
+          <label>Ville
+            <input name="city" type="text">
+          </label>
+          <label>Pays
+            <input name="country" type="text">
+          </label>
+          <label>Email
+            <input name="email" type="email">
+          </label>
+          <label>Telephone
+            <input name="phone" type="text">
+          </label>
+        </div>
+
+        <label>Profil
+          <textarea name="profile" rows="3"></textarea>
+        </label>
+
+        <label>Loisirs
+          <textarea name="hobbies" rows="2"></textarea>
+        </label>
+
+        <div class="form-grid">
+          <label>Langues
+            <textarea name="languages" rows="3"></textarea>
+          </label>
+          <label>Formation
+            <textarea name="education" rows="3"></textarea>
+          </label>
+          <label>Experiences / Projets
+            <textarea name="experiences" rows="3"></textarea>
+          </label>
+          <label>Competences
+            <textarea name="skills" rows="3"></textarea>
+          </label>
+        </div>
+
+        <div class="form-grid">
+          <label>Remplacer la photo
+            <input name="photo" type="file" accept="image/*">
+          </label>
+          <label>Remplacer la video
+            <input name="video" type="file" accept="video/*">
+          </label>
+          <label>Remplacer l'audio
+            <input name="audio" type="file" accept="audio/*">
+          </label>
+        </div>
+
+        <div class="modal-actions">
+          <button id="close-edit-modal" type="button" class="btn-secondary">Annuler</button>
+          <button id="submit-edit" type="submit" class="btn-main" data-i18n="save">Enregistrer les modifications</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script type="module" src="dist/cv.js"></script>
+</body>
+</html>

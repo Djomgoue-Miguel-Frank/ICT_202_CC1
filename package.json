@@ -1,0 +1,25 @@
+{
+  "name": "ict_202_cc1",
+  "version": "1.0.0",
+  "description": "CV collectif dynamique (HTML/CSS/TypeScript + IndexedDB)",
+  "main": "dist/main.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "printf \"\\nServeur demarre. Ouvre ce lien:\\nhttp://127.0.0.1:5500/CC1.html\\n\\n\" && python3 -m http.server 5500 --bind 127.0.0.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Djomgoue-Miguel-Frank/ICT_202_CC1.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/Djomgoue-Miguel-Frank/ICT_202_CC1/issues"
+  },
+  "homepage": "https://github.com/Djomgoue-Miguel-Frank/ICT_202_CC1#readme",
+  "devDependencies": {
+    "typescript": "^6.0.3"
+  }
+}

@@ -1,0 +1,239 @@
+[
+  {
+    "id": "djomgoue-miguel-frank",
+    "fullName": "DJOMGOUE MIGUEL FRANK",
+    "headline": "ETUDIANT",
+    "groupRole": "Chef du groupe (Numero 41)",
+    "matricule": "24H2449",
+    "city": "Yaounde",
+    "country": "Cameroun",
+    "email": "djomgouemiguel@gmail.com",
+    "phone": "+237 657560037",
+    "profile": "Je suis etudiant a l'Universite de Yaounde I, faculte des sciences, filiere ICT4D, specialite securite des systemes informatiques.",
+    "hobbies": "Football, course de vitesse, cuisine camerounaise.",
+    "languages": ["Francais", "Anglais"],
+    "education": [
+      "2023 - 2024 : Diplome de baccalaureat",
+      "2024 - 2025 : Licence ICT4D 1",
+      "2025 - 2026 : Licence ICT4D 2"
+    ],
+    "experiences": ["Instituteur de mathematiques", "Developpeur web"],
+    "skills": ["HTML", "CSS", "JavaScript", "Gestion de projet"],
+    "legacyMedia": {
+      "photo": "assets/miguel.jpg",
+      "video": "assets/miguel.mp4",
+      "audio": "assets/miguel.mp3"
+    }
+  },
+  {
+    "id": "douanla-mafo-jimmy-tresor",
+    "fullName": "DOUANLA MAFO JIMMY TRESOR",
+    "headline": "ETUDIANT FULL STACK DEVELOPER",
+    "groupRole": "Sous-chef (Numero 42)",
+    "matricule": "24H2206",
+    "city": "Yaounde",
+    "country": "Cameroun",
+    "email": "jimmydouanla@gmail.com",
+    "phone": "+237 654187578",
+    "profile": "Etudiant a l'Universite de Yaounde I, passionne par le developpement web, les systemes informatiques et les nouvelles technologies.",
+    "hobbies": "Programmation, technologies, football, innovation digitale.",
+    "languages": ["Francais", "Anglais"],
+    "education": [
+      "2023 - 2024 : Baccalaureat scientifique",
+      "2024 - 2025 : Licence ICT4D Niveau 1",
+      "2025 - 2026 : Licence ICT4D Niveau 2"
+    ],
+    "experiences": [
+      "Developpement de mini projets web",
+      "Creation de portfolios modernes",
+      "Participation a des travaux universitaires"
+    ],
+    "skills": ["HTML", "CSS", "JavaScript", "PHP", "MySQL", "React"],
+    "legacyMedia": {
+      "photo": "assets/jimmy1.jpg",
+      "video": "assets/jimmy1.mp4",
+      "audio": "assets/jimmy1.mp3"
+    }
+  },
+  {
+    "id": "njimoluh-wajid-faouz",
+    "fullName": "NJIMOLUH WAJID FAOUZ",
+    "headline": "ETUDIANT EN INFORMATIQUE ICT4D",
+    "groupRole": "Membre (Numero 43)",
+    "matricule": "24H2076",
+    "city": "Yaounde",
+    "country": "Cameroun",
+    "email": "wajidnjimoluh@gmail.com",
+    "phone": "+237 693172961",
+    "profile": "Je suis etudiant passionne par la cyber-securite, le developpement web, le developpement mobile, les technologies et l'innovation.",
+    "hobbies": "Football, nouvelles technologies.",
+    "languages": ["Francais", "Anglais"],
+    "education": [
+      "2025 : Licence 1 ICT4D",
+      "2024 : Baccalaureat (LYCLAF)",
+      "2021 : BEPC (LYCLAF)"
+    ],
+    "experiences": ["Formation continue en ICT4D et projets academiques."],
+    "skills": ["HTML", "CSS", "JavaScript", "Utilisation des outils IA"],
+    "legacyMedia": {
+      "photo": "assets/faouz.jpg",
+      "video": "assets/faouz.mp4",
+      "audio": "assets/faouz.mp3"
+    }
+  },
+  {
+    "id": "ngom-joseph-jimmy-corneille",
+    "fullName": "NGOM JOSEPH JIMMY CORNEILLE",
+    "headline": "ETUDIANT EN SECURITE INFORMATIQUE",
+    "groupRole": "Membre (Numero 44)",
+    "matricule": "24H2199",
+    "city": "Yaounde",
+    "country": "Cameroun",
+    "email": "jimmycorneillengom@gmail.com",
+    "phone": "+237 659949883",
+    "profile": "Etudiant passionne par la securite informatique, le developpement logiciel et le design graphique (UI/UX).",
+    "hobbies": "Design graphique, veille technologique, musique.",
+    "languages": ["Francais", "Anglais"],
+    "education": [
+      "2025 - Present : Licence 2 Securite Informatique (ICT4D) - Universite de Yaounde I",
+      "2024 - 2025 : Licence 1 ICT4D - Universite de Yaounde I",
+      "2024 : Baccalaureat",
+      "2022 : Probatoire"
+    ],
+    "experiences": [
+      "MENTION237 : Plateforme educative pour la reussite aux examens",
+      "EVALTRACK : Application de gestion des notes des etudiants",
+      "Gestion de restaurant : Systeme complet de gestion",
+      "Emploi du temps : Application de gestion scolaire"
+    ],
+    "skills": [
+      "Dev : Langage C, Algorithmique, Linux (Ubuntu)",
+      "Securite : Analyse systeme, machines virtuelles",
+      "Design : Photoshop, Figma, Canva, UI/UX Design"
+    ],
+    "legacyMedia": {
+      "photo": "assets/jimmy2.jpg",
+      "video": "assets/jimmy2.mp4",
+      "audio": "assets/jimmy.mp3"
+    }
+  },
+  {
+    "id": "yogo-victorine",
+    "fullName": "YOGO VICTORINE",
+    "headline": "ETUDIANTE | HOTESSE | MANNEQUIN | AGENT D'ASSURANCE",
+    "groupRole": "Membre (Numero 45)",
+    "matricule": "24H2103",
+    "city": "Yaounde",
+    "country": "Cameroun",
+    "email": "yogovictorine575@gmail.com",
+    "phone": "",
+    "profile": "Etudiante de 19 ans a l'Universite de Yaounde 1. Formation en securite informatique, reseau informatique, marketing digital et communication.",
+    "hobbies": "Mode, communication, marketing et apprentissage continu.",
+    "languages": ["Francais", "Anglais"],
+    "education": [
+      "Baccalaureat scientifique",
+      "Universite de Yaounde 1",
+      "Reseaux informatiques"
+    ],
+    "experiences": ["Hotesse", "Mannequin", "Agent d'assurance"],
+    "skills": ["Marketing", "Communication", "Reseaux informatiques"],
+    "legacyMedia": {
+      "photo": "assets/vicky.jpg",
+      "video": "assets/vicky.mp4"
+    }
+  },
+  {
+    "id": "kouawa-foba-benjamin",
+    "fullName": "KOUAWA FOBA BENJAMIN",
+    "headline": "ETUDIANT",
+    "groupRole": "Membre (Numero 46)",
+    "matricule": "24G2425",
+    "city": "Yaounde",
+    "country": "Cameroun",
+    "email": "benjofoba@gmail.com",
+    "phone": "+237 657751373",
+    "profile": "Etudiant en Licence 2 ICT4D, passionne par les technologies et le numerique. Rigoureux, organise et dote d'un bon esprit d'equipe.",
+    "hobbies": "Jeux, programmation, sciences, technologie, histoire, philosophie, art, litterature, sports, musique et voyages.",
+    "languages": ["Francais", "Anglais"],
+    "education": [
+      "2025 - 2026 : ICT4D L2 - Universite de Yaounde I",
+      "2024 - 2025 : ICT4D L1 - Universite de Yaounde I",
+      "2021 - 2022 : Baccalaureat scientifique (serie C)",
+      "2020 - 2021 : Probatoire scientifique (serie C)",
+      "2018 - 2019 : BEPC",
+      "2014 - 2015 : CEPE"
+    ],
+    "experiences": ["Recherche de stage en entreprise pour consolidation des competences."],
+    "skills": ["HTML", "CSS", "C", "PHP", "C++", "JavaScript", "Python", "Java"],
+    "legacyMedia": {
+      "photo": "assets/kouawa.jpg",
+      "video": "assets/kouawa.mp4",
+      "audio": "assets/kouawa.mp3"
+    }
+  },
+  {
+    "id": "mikam-mibelle",
+    "fullName": "MIKAM MIBELLE",
+    "headline": "ETUDIANTE",
+    "groupRole": "Membre (Numero 47)",
+    "matricule": "21T2814",
+    "city": "Yaounde",
+    "country": "Cameroun",
+    "email": "mibellemikam837@gmail.com",
+    "phone": "+237 655520015",
+    "profile": "Je suis etudiante a l'Universite de Yaounde I, en cycle licence ICT4D specialite Genie logiciel.",
+    "hobbies": "Lecture, cuisine camerounaise.",
+    "languages": ["Francais", "Anglais"],
+    "education": [
+      "2020 - 2021 : Baccalaureat C",
+      "2022 - 2023 : Licence 1 Mathematiques",
+      "2023 - 2026 : Licence professionnelle ICT4D"
+    ],
+    "experiences": [
+      "Institutrice - Groupe Excellence +",
+      "Soutien scolaire personnalise",
+      "Methodes pedagogiques adaptees",
+      "Suivi des eleves"
+    ],
+    "skills": ["Communication", "Gestion de projet", "Adaptabilite"],
+    "legacyMedia": {
+      "photo": "assets/fille.jpg",
+      "video": "assets/mibelle.mp4"
+    }
+  },
+  {
+    "id": "kengne-bekam-fidele-jordan",
+    "fullName": "KENGNE BEKAM FIDELE JORDAN",
+    "headline": "DEVELOPPEUR MOBILE JUNIOR | ENTREPRENEUR",
+    "groupRole": "Membre (Numero 48)",
+    "matricule": "24H2143",
+    "city": "Yaounde",
+    "country": "Cameroun",
+    "email": "bejorbejor2@gmail.com",
+    "phone": "+237 658174874",
+    "profile": "Etudiant en deuxieme annee ICT4D a l'Universite de Yaounde I, specialite Genie logiciel. Passionne par le developpement d'applications et la creation de solutions numeriques.",
+    "hobbies": "Entrepreneuriat, developpement mobile, montage video, photographie.",
+    "languages": ["Francais", "Anglais"],
+    "education": [
+      "2022 - 2023 : Baccalaureat C",
+      "2023 - 2024 : Formation d'anglais",
+      "2024 - 2026 : Licence professionnelle ICT4D"
+    ],
+    "experiences": [
+      "Projet BK Drive : gestion de la communication et vente de vehicules d'occasion"
+    ],
+    "skills": [
+      "JavaScript",
+      "Dart",
+      "HTML",
+      "CSS",
+      "Git",
+      "VS Code",
+      "Android Studio"
+    ],
+    "legacyMedia": {
+      "photo": "assets/bejor.jpg",
+      "video": "assets/presentation.mp4"
+    }
+  }
+]
